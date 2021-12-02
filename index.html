@@ -139,6 +139,43 @@
           </div>
         </div>
       </div>
+
+    <section id="my-keyboards">
+        <div class="container">
+          <div class="row text-center mb-3">
+            <div class="col">
+              <h2>My Keyboards</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-lg-4 mb-3"></div>
+            <div class="keyboard-box">
+              <h4 class="keyboard-name">Keychron K2</h4>
+              <img src="img/keyboards/1.png" alt="Keychron K3" class="keyboard-img" />
+              <a href="#" class="btn btn-light keyboard-detail-button">Show Details </a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col lg-4 mb-3"></div>
+            <div class="keyboard-box">
+              <h4 class="keyboard-name">Womier RGB</h4>
+              <img src="img/keyboards/2.png" alt="Womier RGB" class="keyboard-img" />
+              <a href="#" class="btn btn-light keyboard-detail-button">Show Details </a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-lg-4 mb-3"></div>
+            <div class="keyboard-box">
+              <h4 class="keyboard-name">Red Dragon</h4>
+              <img src="img/keyboards/3.png" alt="Red Dragon" class="keyboard-img" />
+              <a href="#" class="btn btn-light keyboard-detail-button">Show Details </a>
+            </div>
+        </div>
+      </div>
+        </div>
+      </div>
+      </section>
+
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#ffffff"
@@ -148,70 +185,6 @@
       </svg>
     </section>
     <!-- Akhir Projects -->
-
-    <!-- Gallery -->
-    <section id="gallery">
-      <div class="container">
-        <div class="row text-center mb-3">
-          <div class="col">
-            <h2>Gallery</h2>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-md-3">
-            <a href="#">
-              <img src="img/gallery/thumbnail/1.jpg" alt="Gambar 1" class="img-fluid gallery-img" />
-            </a>
-          </div>
-          <div class="col-md-3">
-            <a href="#">
-              <img src="img/gallery/thumbnail/2.jpg" alt="Gambar 2" class="img-fluid gallery-img" />
-            </a>
-          </div>
-          <div class="col-md-3">
-            <a href="#">
-              <img src="img/gallery/thumbnail/3.jpg" alt="Gambar 3" class="img-fluid gallery-img" />
-            </a>
-          </div>
-          <div class="col-md-3">
-            <a href="#">
-              <img src="img/gallery/thumbnail/4.jpg" alt="Gambar 4" class="img-fluid gallery-img" />
-            </a>
-          </div>
-          <div class="col-md-3">
-            <a href="#">
-              <img src="img/gallery/thumbnail/5.jpg" alt="Gambar 5" class="img-fluid gallery-img" />
-            </a>
-          </div>
-          <div class="col-md-3">
-            <a href="#">
-              <img src="img/gallery/thumbnail/6.jpg" alt="Gambar 6" class="img-fluid gallery-img" />
-            </a>
-          </div>
-          <div class="col-md-3">
-            <a href="#">
-              <img src="img/gallery/thumbnail/7.jpg" alt="Gambar 7" class="img-fluid gallery-img" />
-            </a>
-          </div>
-          <div class="col-md-3">
-            <a href="#">
-              <img src="img/gallery/thumbnail/8.jpg" alt="Gambar 8" class="img-fluid gallery-img" />
-            </a>
-          </div>
-          <div class="col-md-3">
-            <a href="#">
-              <img src="img/gallery/thumbnail/9.jpg" alt="Gambar 9" class="img-fluid gallery-img" />
-            </a>
-          </div>
-          <div class="col-md-3">
-            <a href="#">
-              <img src="img/gallery/thumbnail/10.jpg" alt="Gambar 10" class="img-fluid gallery-img" />
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Akhir Gallery -->
 
     <!-- Contact -->
     <section id="contact">
@@ -270,18 +243,17 @@
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      const galleryImage = document.querySelectorAll('.gallery-img');
+      const galleryImage = document.querySelectorAll(".gallery-img");
 
-      galleryImage.forEach((img, i) =>{
-        img.dataset.aos = 'fade-down';
-        img.dataset.aosDelay = i*100;
+      galleryImage.forEach((img, i) => {
+        img.dataset.aos = "fade-down";
+        img.dataset.aosDelay = i * 100;
         img.dataset.aosDuration = 1000;
-      }) 
+      });
 
       AOS.init({
         once: true,
         duration: 100,
-
       });
     </script>
 
@@ -289,11 +261,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/TextPlugin.min.js"></script>
     <script>
       gsap.registerPlugin(TextPlugin);
-      gsap.to('.lead', {duration: 2, delay: 1.5, text: 'Wibu Akut | Content'});
-      gsap.from('.jumbotron img', { duration: 1, y: -100, rotateY: 360, opacity: 0 });
-      gsap.from('.navbar', { duration: 1.5, y:'-100%', opacity: 0, ease: 'bounce'});
-      gsap.from('.display-4', { duration: 1, x: -50, opacity: 0, delay: 0.5, ease: 'back' });
-      </script>
+      gsap.to(".lead", { duration: 2, delay: 1.5, text: "Wibu Akut | Content" });
+      gsap.from(".jumbotron img", { duration: 1, y: -100, rotateY: 360, opacity: 0 });
+      gsap.from(".navbar", { duration: 1.5, y: "-100%", opacity: 0, ease: "bounce" });
+      gsap.from(".display-4", { duration: 1, x: -50, opacity: 0, delay: 0.5, ease: "back" });
+    </script>
 
     <script>
       const scriptURL = "https://script.google.com/macros/s/AKfycbxcOHaGsUdjjv8Ls8TBCG0ZamzZ5aVhAXQAfKVbi-sUm_3j6BtU8qMsNG-5RxJMq8Wu/exec";
@@ -321,6 +293,14 @@
             console.log("Success!", response);
           })
           .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+
+    <script type="text/javascript" src="js/vanilla-tilt.min.js"></script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelectorAll(".keyboard-box"), {
+        max: 25,
+        speed: 400,
       });
     </script>
   </body>
